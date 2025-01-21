@@ -1,0 +1,5 @@
+[tailscale]
+bastelkiste ansible_user=root ansible_host=152.53.106.7
+freepbx	    ansible_user=root ansible_host=46.38.240.193
+mailserver  ansible_user=root ansible_host=46.38.234.137
+uptime-and-sso ansible_user=root ansible_host=202.61.196.151
