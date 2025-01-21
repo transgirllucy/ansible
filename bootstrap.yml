@@ -1,0 +1,26 @@
+---
+- name: Execute NixOS Infect Script
+  hosts: all
+  become: true
+  tasks:
+
+    - name: Ensure curl is installed
+      package:
+        name: curl
+        state: present
+
+    - name: Download NixOS Infect script
+      get_url:
+        url: https://raw.githubusercontent.com/elitak/nixos-infect/master/nixos-infect
+        dest: /tmp/nixos-infect
+        mode: '0755'
+
+    - name: Execute NixOS Infect script
+      command: bash -x /tmp/nixos-infect
+      environment:
+        NIX_CHANNEL: nixos-24.11
+
+    - name: Clean up the script
+      file:
+        path: /tmp/nixos-infect
+        state: absent

@@ -1,5 +1,6 @@
-[tailscale]
+[netcup]
 bastelkiste ansible_user=root ansible_host=152.53.106.7
-freepbx	    ansible_user=root ansible_host=46.38.240.193
-mailserver  ansible_user=root ansible_host=46.38.234.137
-uptime-and-sso ansible_user=root ansible_host=202.61.196.151
+matrix-server ansible_user=root	ansible_host=202.61.196.151
+mailserver ansible_user=root ansible_host=46.38.234.137
+uptime-and-sso ansible_user=root ansible_host=188.68.56.42
+asterisk ansible_user=root ansible_host=46.38.240.193

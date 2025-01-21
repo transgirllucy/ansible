@@ -1,2 +1,2 @@
-tailscale:
-	ansible-playbook -i hosts tailscale.yml
+bootstrap:
+	ansible-playbook -i hosts bootstrap.yml
